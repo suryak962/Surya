@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+    public static long factorial(int n) {
+        if (n <= 1)
+            return 1;
+        else
+            return n * factorial(n - 1);
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter a number: ");
+        int n = scanner.nextInt();
+        
+        if (n < 0) {
+            System.out.println("Factorial is not defined for negative numbers.");
+        } else {
+            long result = factorial(n);
+            System.out.println("Factorial of " + n + " is: " + result);
+        }
+    }
+}
+output;
+Enter the number;5
+Factorial of 5 is ; 120
