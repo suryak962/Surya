@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] array1 = {1, 2, 3, 4, 5};
+        int[] array2 = {10, 20, 30, 40, 50};
+
+        if (array1.length != array2.length) {
+            System.out.println("Arrays are not of the same length!");
+            return;
+        }
+
+        int[] sumArray = new int[array1.length];
+
+        for (int i = 0; i < array1.length; i++) {
+            sumArray[i] = array1[i] + array2[i];
+        }
+
+        System.out.print("Sum of arrays: ");
+        for (int i = 0; i < sumArray.length; i++) {
+            System.out.print(sumArray[i] + " ");
+        }
+    }
+}
+output;
+sum of arrays ; 11 22 33 44 55
