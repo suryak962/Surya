@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int matrix[][]=new int[n][n];
+    for(int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            matrix[i][j]=sc.nextInt();
+        }
+    } 
+        int major=0;
+        int minor=0;
+        for(int i=0;i<n;i++){
+            major+=matrix[i][i];
+            minor+=matrix[i][n-1-i];
+        }
+        int totalsum=major+minor;
+        if(n%2==1){
+            int center=matrix[n/2][n/2];
+            totalsum=-center;
+        }
+        System.out.println(major);
+        System.out.println(minor);
+        System.out.println(totalsum);
+    }
+}
+output:
+1 2 3 4
+2
+2
+-2
