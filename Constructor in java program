@@ -1,0 +1,43 @@
+class Employee{
+    int id;
+    String name;
+    double salary;
+    Employee(){
+        id=id;
+        name=name;
+    }
+    Employee(int i,String s){
+        id=1;
+        name=s;
+    }
+    Employee(int j,String d,double r){
+        id=j;
+        name=d;
+        salary=r;
+    }
+    void display(){
+        System.out.println(id);
+        System.out.println(name);
+        System.out.println(salary);
+    }
+}
+public class Main{
+    public static void main(String[]args){
+    Employee s1=new Employee ();
+    Employee s2=new Employee(203,"ram");
+    Employee s3=new Employee(204,"rajesh",35000);
+    s1.display();
+    s2.display();
+    s3.display();
+    }
+}
+out put:
+0
+null
+0.0
+1
+ram
+0.0
+204
+rajash
+35000.0
