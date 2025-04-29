@@ -1,0 +1,22 @@
+class Superclass {
+    void display() {
+        System.out.println("This is the superclass");
+    }
+}
+
+class Subclass extends Superclass {
+    void show() {
+        System.out.println("This is the subclass");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Subclass obj = new Subclass();
+        obj.display(); 
+        obj.show();   
+    }
+}
+out put;
+This is the super class
+This is the sub class
