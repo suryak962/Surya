@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Stack<String> stack = new Stack<>();
+        stack.push("Apple");
+        stack.push("Banana");
+        stack.push("Cherry");
+        System.out.println("Stack: " + stack);
+        System.out.println("Top element: " + stack.peek());
+        String removedElement = stack.pop();
+        System.out.println("Removed element: " + removedElement);
+        System.out.println("Stack after pop: " + stack);
+        System.out.println("Is the stack empty? " + stack.isEmpty());
+    }
+}
+output;
+Top element: cherry
+Removed element: cherry
+cherryStack after pop: [Apple, Banana]
+is the stack emptey: false
