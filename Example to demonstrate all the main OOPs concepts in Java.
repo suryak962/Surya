@@ -1,0 +1,57 @@
+abstract class Animal {
+    String name;
+    Animal(String name) {   
+        this.name = name;
+    }
+    abstract void sound();
+    void sleep() {
+        System.out.println(name + " is sleeping...");
+    }
+}
+class Dog extends Animal {
+    Dog(String name) {
+        super(name);
+    }
+    @Override
+    void sound() {
+        System.out.println(name + " says: Woof Woof!");
+    }
+}
+class Cat extends Animal {
+    Cat(String name) {
+        super(name);
+    }
+    @Override
+    void sound() {
+        System.out.println(name + " says: Meow Meow!");
+    }
+}
+class Person {
+    private String name; 
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        
+        Animal a1 = new Dog("Tommy");
+        Animal a2 = new Cat("Kitty");
+
+        a1.sound();
+        a2.sound();
+       a1.sleep();
+
+        Person p = new Person();
+        p.setName("Suriya");
+        System.out.println("Person Name: " + p.getName());
+    }
+}
+output;
+Tommy says: Woof Woof!
+Kitty says: Meow Meow!
+Tommy is sleeping...
+Person Name: Suriya
